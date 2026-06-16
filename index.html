@@ -1,31 +1,116 @@
 <!DOCTYPE html>
+          <meta charset="utf-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <html lang="de">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gina Glitzer's TuneJammy</title>
-            <style>
-        body {
-            background-image: url("images/glitterbg.png");
-            background-repeat: no-repeat;}   
-        </style>
-  </head>
-  
-  <body>
+
+  <style>
+      body {
+        margin: 0;
+        font-family: "Lato", sans-serif;
+      }
+
+      .sidebar {
+        margin: 0;
+        padding: 0;
+        width: 200px;
+        background-color: #ff8de1;
+        position: fixed;
+        height: 100%;
+        overflow: auto;
+      }
+
+      .sidebar a {
+        display: block;
+        color: rgb(127, 3, 86);
+        padding: 16px;
+        text-decoration: none;
+      }
+      
+      .sidebar a.active {
+        background-color: #ff0894;
+        color: white;
+      }
+
+      .sidebar a:hover:not(.active) {
+        background-color: #fe7ac0;
+        color: white;
+      }
+
+      div.content {
+        margin-left: 200px;
+        padding: 1px 16px;
+        height: 1000px;
+        background-color: #ffb8ec;
+      }
+
+      .image-container {
+        width: 200px;
+        height: 300px;
+        border: 1px solid black;
+      }
+
+      .image-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 15% 100%;  
+      }
+
+      @media screen and (max-width: 700px) {
+        .sidebar {
+          width: 100%;
+          height: auto;
+          position: relative;
+        }
+        .sidebar a {float: left;}
+        div.content {margin-left: 0;}
+      }
+
+      @media screen and (max-width: 400px) {
+        .sidebar a {
+          text-align: center;
+          float: none;
+        }
+      }
+  </style>
+
+
+    <head>
+          <title>Gina Glitzer's TuneJammy</title>
+          <style>
+              body {
+                  background-image: url("images/glitterbg.png");
+                  background-repeat: repeat;}
+                  .box {
+                  outline: 3px dashed hotpink;
+                }  
+          </style>
+
+        <h1 style="background-color:HotPink;color:aqua;text-align: center;">ᯓ𝄞 ˎˊ✿⋆.˚⋆₊ ⊹ Gina Glitzer's TuneJammy .𖥔 ݁ ˖𖦹⭒°｡⋆ ᯓ𝄞 ˎˊ˗ </h1>
+        <marquee bgcolor="#FFFE00" scrollamount="6" style="color:rgb(236, 55, 182);"> ♫⋆｡♪ ₊˚♬ ﾟ. neue Website im Net ♫⋆｡♪ ₊˚♬ ﾟ. </marquee>
     
 
-    <h1 style="background-color:HotPink;color:aqua;text-align: center;">ᯓ𝄞 ˎˊ✿⋆.˚⋆₊ ⊹ Gina Glitzer's TuneJammy .𖥔 ݁ ˖𖦹⭒°｡⋆ ᯓ𝄞 ˎˊ˗ </h1>
-    <marquee bgcolor="#FFFE00" scrollamount="6" style="color:rgb(236, 55, 182);"> ♫⋆｡♪ ₊˚♬ ﾟ. neue Webseite im Net ♫⋆｡♪ ₊˚♬ ﾟ. </marquee>
+    </head>
 
-    <h3 style="background-color:rgb(255, 194, 204);font-size: medium;">Hier ist mein Senf zu Zeugs:</h3>
-    <p>
-      
+    <body>
+    <!-- The sidebar -->
+        <div class="sidebar">
+          <a class="active" href="https://ginaglitzer.github.io/TuneJammy/">Start</a>
+          <a href="#news">CD Reviews</a>
+          <a href="#contact">Sets</a>
+          <a href="#about">Kontakt</a>
+        </div>
 
-    </p>
-    <h2>Left property example</h2>
-    <p>Here the left property is defined as 35px.</p>
-    <img src="images/GinaOnFire.png" width="300" height="500"  alt="Sims 1 Gina Glitzer neben einem Ofen, der in Flammen steht">
+    <!-- Page content -->      
+    <div class="content">
+          <p style="text-align:center">
+          <img src="images/GinaOnFire.png" alt="Sims 1 Gina Glitzer neben einem Ofen, der in Flammen steht" 
+          style="width: 300px; height: 500px;"> 
+          </p>
+          <p style="text-align:center">
+            Vorstellen balbalbaababöaba
+          </p>
+    </div>    
 
-    </p>
-  </body>
-</html>
+    </body>
+</html>  
