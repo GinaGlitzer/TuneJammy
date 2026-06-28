@@ -55,7 +55,17 @@ body {
   width: 100%;
   padding: 20px;
 }
-
+.image-container {
+  width: 100%;
+  height: 300px;
+  border: 5px solid rgb(172, 31, 3);
+}
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position:2% 20%;
+}
 /* Add a card effect for articles */
 .card {
   background-color: #bf2e1b;
@@ -117,7 +127,7 @@ body {
 <div class="header">
   <h2 style="color:rgb(0, 255, 255);">´ᯓ𝄞 ˎˊ✿⋆.˚⋆₊ ⊹ Gina Glitzer's TuneJammy .𖥔 ݁ ˖𖦹⭒°｡⋆ ᯓ𝄞 ˎˊ˗</h2>
 </div>
-
+ <marquee bgcolor="#FFFE00" scrollamount="6" style="color:rgb(236, 55, 182);"> ♫⋆｡♪ ₊˚♬ ﾟ. It's Britney, Bitch. ♫⋆｡♪ ₊˚♬ ﾟ. </marquee>
 <div class="row">
   <div class="leftcolumn">
         <!-- The sidebar -->
@@ -131,8 +141,9 @@ body {
       
       <h1 style="color:rgb(255, 179, 0);">BLACKOUT</h1>
       <h3 style="color:rgb(255, 179, 0);">Britney Spears, 2007</h3>
-                <img src="images/BlackoutBritneySpearsCover.png" alt="Blackout-Cover" 
-          style="width: 1000px; height: 660px;"> 
+            <div class="image-container">
+                <img src="images/BlackoutBritneySpearsCover.png" alt="Blackout-Cover" </img>
+            </div>    
       <h6 style="color:rgb(38, 27, 27);text-align: center;"> Bildquelle: https://www.eonline.com/co/news/889401/-blackout-cumple-10-anos-recordemos-el-regreso-de-britney-spears-despues-de-estar-casi-al-borde</h2> 
       <p>
           Nach meiner Entscheidung Spotify aufzugeben, habe ich mir direkt mehrere Pop-Alben bestellt, die ich vorher, wegen den Artists selbst oder anderen Mitwirkenden auf Spotify vermieden, aber sehnlichst vermisst hatte.
@@ -192,7 +203,7 @@ Piece of Me schloss an den Erfolg des Vorgängers Gimme More an. In Australien u
     </div>
     <div class="card">
       <h2 style="color:rgb(255, 179, 0);">Über Gina Glitzer</h2>
-      <img src="images/GinaOnFire.png" style="height: 200px; width: 150px;" alt="Sims 1 Gina Glitzer neben einem Ofen, der in Flammen steht" 
+      <img src="images/GinaOnFire.png" style="height: 200px; width: 150px;" alt="Sims 1 Gina Glitzer neben einem Ofen, der in Flammen steht" </img>
       <p> </p>
       <p>Ich mag Musik, hab viel Meinung und habe viele CDs, die ich hier reviewe.</p>
     </div>
